@@ -25,7 +25,7 @@ const createStore = () => {
         context.commit("getUsers", req.data)
       },
       async removeUser(context, userId) {
-        const req = await Axios.get("https://jsonplaceholder.typicode.com/users")
+        //const req = await Axios.get("https://jsonplaceholder.typicode.com/users")
         context.commit("removeUser", userId)
       }
     }
